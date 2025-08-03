@@ -1,12 +1,8 @@
 # arcanum-silente.
 Um blog de curiosidades
-num-silente.
-
-Um blog de curiosidades
-
 arcanum-silente/
 
-<!DOCTYPE html
+<DOCTYPE html>
 
 <html lang="pt-BR">
 
