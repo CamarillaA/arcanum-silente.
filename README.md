@@ -2,7 +2,7 @@
 Um blog de curiosidades
 arcanum-silente/
 
-<DOCTYPE html>
+<DOCTYPE html/>
 
 <html lang="pt-BR">
 
@@ -245,7 +245,7 @@ arcanum-silente/
 
 └── orvax/
 
-    └── blood.html
+    └── blood.html>
 
     <!DOCTYPE html>
 
