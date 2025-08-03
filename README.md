@@ -1,6 +1,4 @@
-arcanum-silente/
-├──index.html 
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -55,12 +53,6 @@ arcanum-silente/
     .button:hover {
       background: #991b1b;
     }
-    .alerta {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 1.2rem;
-      color: red;
-    }
     footer {
       background: #111;
       text-align: center;
@@ -69,6 +61,14 @@ arcanum-silente/
       color: #666;
     }
   </style>
+  <script>
+    window.onload = function () {
+      const senha = prompt("Tem certeza da escolha? Digite a senha:");
+      if (senha !== "silente") {
+        document.body.innerHTML = '<div style="color: red; text-align: center; margin-top: 20vh;">Acesso negado.</div>';
+      }
+    };
+  </script>
 </head>
 <body>
   <header>
@@ -95,7 +95,7 @@ arcanum-silente/
       <p class="latin">“Sanguis unus, vita altera. Ubi umbra, ibi vestigium.”</p>
       <p style="font-size: small; color: gray;"><em>Apenas uma gota resta, e ela não está onde dizem que está.</em></p>
       <div style="text-align:center;">
-        <a href="orvax/blood.html" class="button">Acessar a gota de sangue</a>
+        <a href="./orvax/blood.html" class="button">Acessar a gota de sangue</a>
         <p style="font-size: small; color: gray;">Senha necessária. Pista oculta na página principal, linha 13 do códice.</p>
       </div>
     </section>
@@ -114,26 +114,10 @@ arcanum-silente/
       <div class="note">"O eco de D. ainda vive sob as garras de L., que caminha entre a carne e a lembrança."</div>
       <div class="note">"Ela se debruça sobre os nomes riscados, e por entre eles, o que nunca foi dito permanece ativo."</div>
     </section>
-
-    <div class="alerta" id="bloqueio"></div>
   </main>
 
   <footer>
     &copy; Arcanum Silente. Criado por 01.
   </footer>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const senha = prompt("Tem certeza da escolha? Digite a senha:");
-      if (senha !== "silente") {
-        document.getElementById("bloqueio").innerText = "🔒 Acesso negado.";
-        document.querySelector("main").style.display = "none";
-      }
-    });
-  </script>
 </body>
 </html>
-└── orvax/
-    └── blood.html      ← subpágina protegida
-
-
